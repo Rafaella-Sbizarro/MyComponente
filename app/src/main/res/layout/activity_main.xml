@@ -7,55 +7,121 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/chkLivro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Livro"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:text="Escolha"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/chkDormir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dormir"/>
+        <CheckBox
+            android:id="@+id/chkLivros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Livros" />
 
-    <CheckBox
-        android:id="@+id/chkComer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comer"/>
+        <CheckBox
+            android:id="@+id/chkDormir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domir" />
+
+        <CheckBox
+            android:id="@+id/chkComer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:text="Escolha"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdbVerdadeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verdadeiro" />
+
+            <RadioButton
+                android:id="@+id/rdbFalso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Falso" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:text="Geral"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swtWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Wifi" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swtBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Bluetooth" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swtMAviao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Modo avião" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swtNPertube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Não pertube" />
     </LinearLayout>
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/dFab"
-        android:src="@drawable/baseline_botao"
         android:layout_gravity="bottom|right"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:src="@drawable/baseline_botao" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/idFABExtend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Tasks"
-        app:icon="@drawable/baseline_email"
-        android:layout_margin="20dp"
         android:layout_gravity="bottom|left"
-        android:id="@+id/idFabExtend" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:layout_margin="20dp"
+        android:text="New Tasks"
+        app:icon="@drawable/baseline_email" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

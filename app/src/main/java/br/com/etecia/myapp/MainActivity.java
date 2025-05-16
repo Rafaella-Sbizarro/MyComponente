@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         // apresentar o java ao xml
-        idFAB = findViewById(R.id.dFab);
-        idFabExtend = findViewById(R.id.idFabExtend);
+        idFAB = findViewById(R.id.idFAB);
+        idFabExtend = findViewById(R.id.idFABExtend);
 
         idFAB.setOnClickListener(new View.OnClickListener() {
             @Override
